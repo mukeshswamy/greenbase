@@ -1,0 +1,230 @@
+@font-face {
+	font-family: "DIN Condensed";
+	src: url("../fonts/DINCondensed-Bold.woff") format("woff2"),
+		url("../fonts/DINCondensed-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "D-DIN Condensed";
+	src: url("../fonts/D-DINCondensed.woff2") format("woff2"),
+		url("../fonts/D-DINCondensed.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("../fonts/Gotham-Medium.woff2") format("woff2"),
+		url("../fonts/Gotham-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "D-DIN Condensed";
+	src: url("../fonts/D-DINCondensed-Bold.woff2") format("woff2"),
+		url("../fonts/D-DINCondensed-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+.main-header {
+	background-color: white;
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.container-header{
+    padding-left: 60px;
+}
+.logo {
+	width: 60%;
+}
+.paddingnull{
+    padding: 0 !important;
+}
+.header-row {
+	padding: 10px 0;
+}
+
+.main-nav-ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	float: right;
+	position: relative;
+}
+
+.main-nav-ul li {
+	display: inline;
+	padding: 0 10px;
+	font-family: "DIN Condensed";
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.main-nav-ul .active::after {
+	content: "";
+	width: 9%;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+}
+
+.carousel-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.carousel-controler-container {
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-controler-container a {
+}
+
+.carousel-controler-container img {
+    width: 12%;
+    margin-bottom: 20px;
+}
+
+.content-over-header{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    padding-left: 60px;
+}
+
+.content-div{
+    background-color: white;
+    display: inline-block;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    font-family: "D-DIN Condensed";
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.capabilitie-container{
+    margin-right: 0 !important;
+    padding: 0px !important;
+    overflow: hidden;
+}
+.content2-div, .capabilitie-content-div{
+    padding-top: 12%;
+    padding-left: 60px;
+}
+
+.content-2,
+.capabilitie-content-2{
+    background-color: black;
+    display: inline-block;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    font-family: "D-DIN Condensed";
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+}
+.content-2-1,
+.capabilitie-content-2-1{
+    font-family: "D-DIN Condensed";
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+}
+.content-2-ul, 
+.capabilitie-content-2-ul{
+    list-style-type: none;
+	margin-top: 25px;
+	padding: 0;
+}
+.content-2-ul li,
+.capabilitie-content-2-ul li{
+    font-family: "D-DIN Condensed";
+    font-weight: normal;
+    color: #9E9E9E;
+    cursor: pointer;
+}
+.banner2{
+    width: 100%;
+    height: 100vh;
+}
+
+.capabilitie-container2{
+	margin-right: 0 !important;
+    padding: 0px !important;
+	overflow: hidden;
+	position: relative;
+}
+.carousel-controler-capabilitie-container{
+	position: absolute;
+    width: fit-content;
+    top: 50%;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-controler-capabilitie-container img {
+    width: 12%;
+    margin-bottom: 20px;
+}
+
+.capabilitie-content-div{
+	padding-top: 6% !important;
+	padding-right: 0px !important;
+}
+.capabilitie-content-2-1 h4{
+	font-family: "D-DIN Condensed";
+    font-weight: bold;
+	font-size: 18px;
+}
+.capabilitie-content-2-1{
+	font-size: 15px !important;
+	margin-bottom: 30px;
+}
+.length{
+	padding: 3px 25px !important;
+	width: 100%;
+}
+
+.capabilitie-content-2{
+	padding: 3px 25px !important;
+	font-size: 55px;
+}
+
+.carousel-container3{
+	padding-left: 0px !important;
+}
+
+.capabilitie-carousel-inner{
+	position: relative;
+}
+.text-inner-capabilities{
+	font-family: "D-DIN Condensed";
+    font-weight: normal;
+	position: absolute;
+    z-index: 100;
+	bottom: 12px;
+	color: blue;
+	background-color: white;
+	padding: 3px 15px;
+	font-size: 55px;
+}
