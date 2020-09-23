@@ -22,6 +22,16 @@ $(document).ready(function () {
 		}
 	};
 
+	// MOBILE SIDENAV
+	var burger = document.getElementById("burger");
+	// When the user clicks the button, open the sidebar background-color: rgb(0, 0, 0); /* Fallback color */
+	// background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	burger.onclick = function () {
+		document.getElementById("mySidenav").style.width = "45%";
+		document.getElementById("fulloverlay").style.display = "block";
+		// document.getElementById("fulloverlay").style.backgroundColor = "rgba(0,0,0,0.4)";
+	};
+
 	// ABOUT US PAGE CEO's DETAILS LIFT
 	$(".down-arrow").hover(function () {
 		var parentelements = $(this).parent().parent();
@@ -89,6 +99,8 @@ $(document).ready(function () {
 			$(".capabilitie-content-2-ul li a, .overview-list li a").removeClass(
 				"carouselLinkActive"
 			);
+			$(".capabilitie-content-2-1").removeClass("capabilitie-content-2-1-none");
+			$(".content-2-1").addClass("content-2-1-none");
 			$(this).addClass("carouselLinkActive");
 			var getid = $(this).data("index");
 			if (getid != previousActiveTabIndex) {
@@ -110,9 +122,21 @@ $(document).ready(function () {
 						return;
 					}
 				});
+				$(".carousel-item-about").each(function () {
+					if ($(this).data("index") == getid) {
+						$(".carousel-item-about").hide();
+						$(this).show();
+						previousActiveTabIndex = $(this).data("index");
+						return;
+					}
+				});
 			}
 		}
 	);
+	$(".ourcapabilitiesmain").on("click", function () {
+		$(".capabilitie-content-2-1").addClass("capabilitie-content-2-1-none");
+		$(".content-2-1").removeClass("content-2-1-none");
+	});
 	// CAROUSEL ABOUT
 	var previousActiveTabIndex2 = 0;
 	$(".vision_mission_ul li a").on("click", function () {
@@ -139,8 +163,8 @@ $(document).ready(function () {
 		}
 	});
 	// WHYS MODAL
-	var previousActiveTabIndex3 = 1;
-	var previousActiveTabIndex4 = 1;
+	var previousActiveTabIndex3;
+	var previousActiveTabIndex4;
 	$(".whysusedge .col-md-4 h5").on("click", function () {
 		var getids = $(this).data("index");
 		if (getids != previousActiveTabIndex3) {
@@ -181,3 +205,5 @@ $(document).ready(function () {
 		$(".playbutton").removeClass("overlaydisplay");
 	});
 });
+
+
