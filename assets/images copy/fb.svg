@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			
+				<radialGradient id="SVGID_1_" cx="289.8835" cy="-16154.7871" r="187.1469" gradientTransform="matrix(1 0 0 -1 0 -15882)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#000000"/>
+				<stop  offset="0.0973" style="stop-color:#060606;stop-opacity:0.9027"/>
+				<stop  offset="0.2213" style="stop-color:#151515;stop-opacity:0.7787"/>
+				<stop  offset="0.3599" style="stop-color:#303030;stop-opacity:0.6401"/>
+				<stop  offset="0.5092" style="stop-color:#545454;stop-opacity:0.4908"/>
+				<stop  offset="0.6671" style="stop-color:#838383;stop-opacity:0.3329"/>
+				<stop  offset="0.8322" style="stop-color:#BDBDBD;stop-opacity:0.1678"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</radialGradient>
+			<circle opacity="0.5" fill="url(#SVGID_1_)" cx="289.884" cy="272.787" r="187.146"/>
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="272.1727" y1="-15914.876" x2="138.8332" y2="-16332.4395" gradientTransform="matrix(1 0 0 -1 0 -15882)">
+				<stop  offset="0" style="stop-color:#243FE1"/>
+				<stop  offset="0.1537" style="stop-color:#2F53E5"/>
+				<stop  offset="0.4688" style="stop-color:#4C87ED"/>
+				<stop  offset="0.9138" style="stop-color:#7BDAFB"/>
+				<stop  offset="1" style="stop-color:#84EAFE"/>
+			</linearGradient>
+			<path fill="url(#SVGID_2_)" d="M397.262,227.212c0,103.358-83.787,187.145-187.145,187.145
+				c-103.36,0-187.147-83.787-187.147-187.145c0-103.36,83.787-187.147,187.147-187.147
+				C313.475,40.064,397.262,123.851,397.262,227.212z"/>
+		</g>
+	</g>
+	<path id="XMLID_5_" fill="#FFFFFF" d="M230.28,187.291v-17.556c0-8.552,5.709-10.549,9.706-10.549c4.008,0,24.641,0,24.641,0v-37.6
+		l-33.929-0.151c-37.658,0-46.21,28.058-46.21,46.021v19.834h-21.771v43.92h21.96c0,49.766,0,109.778,0,109.778h43.909
+		c0,0,0-60.621,0-109.778h32.588l4.008-43.92H230.28z"/>
+</g>
+</svg>

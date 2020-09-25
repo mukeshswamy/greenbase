@@ -1,36 +1,50 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends CI_Controller
+{
 	public function index()
 	{
 		$this->load->view('/frontend/home');
 	}
-	public function aboutus(){
+	public function aboutus()
+	{
 		$this->load->view('/frontend/aboutus');
 	}
-	public function whyus(){
+	public function whyus()
+	{
 		$this->load->view('/frontend/whyus');
 	}
-	public function clients(){
+	public function clients()
+	{
 		$this->load->view('/frontend/clients');
 	}
-	public function gallery(){
+	public function gallery()
+	{
 		$this->load->view('/frontend/gallery');
 	}
-	public function contact(){
+	public function contact()
+	{
 		$this->load->view('/frontend/contact');
 	}
-	public function news(){
+	public function news()
+	{
 		$this->load->view('/frontend/news');
 	}
-	public function blogs(){
+	public function blogs()
+	{
 		$this->load->view('/frontend/blogs');
 	}
-	public function blogpost(){
+	public function blogpost()
+	{
 		$this->load->view('/frontend/blogpost');
 	}
-	public function newspost(){
+	public function newspost()
+	{
 		$this->load->view('/frontend/newspost');
+	}
+	public function location()
+	{
+		$this->load->view('/frontend/location');
 	}
 }
