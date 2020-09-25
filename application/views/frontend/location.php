@@ -242,6 +242,7 @@
                     <option value="Tamil Nadu">Tamil Nadu</option>
                     <option value="Haryana">Haryana</option>
                     <option value="Karnataka">Karnataka</option>
+                    <option value="West Bengal">West Bengal</option>
                 </select>
                 <div class="city">City/District</div>
                 <div class="districts">
@@ -298,19 +299,21 @@
                                 <p><a href="##">E-brochure<img src="<?php echo base_url(); ?>assets/images/black_down_arrow.svg" class="downimg"></a></p>
                             </div>
                         </div>
+                    </div>
+                    <div class="distcity karnataka d-none">
                         <div class="row">
                             <div class="col-6">
-                                <p class="name">Durgapur</p>
+                                <p class="name">Bangalore</p>
                             </div>
                             <div class="col-6 text-right">
                                 <p><a href="##">E-brochure<img src="<?php echo base_url(); ?>assets/images/black_down_arrow.svg" class="downimg"></a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="distcity karnataka d-none">
+                    <div class="distcity westbengal d-none">
                         <div class="row">
                             <div class="col-6">
-                                <p class="name">Bangalore</p>
+                                <p class="name">Durgapur</p>
                             </div>
                             <div class="col-6 text-right">
                                 <p><a href="##">E-brochure<img src="<?php echo base_url(); ?>assets/images/black_down_arrow.svg" class="downimg"></a></p>
@@ -400,8 +403,8 @@
         },
         durgapur: {
             name: 'DURGAPUR',
-            state: 'TAMIL NADU',
-            area: '1,20,300 sq. ft.',
+            state: 'WEST BENGAL',
+            area: '6,20,300 sq. ft.',
             pdf: '<?php echo base_url(); ?>assets/pdf/bhiwandi.pdf',
             directions: 'https://www.google.com/maps/place/Greenbase+-+Pune/@18.813651,73.6986104,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2b3f3c3f9c46b:0xb60a391bb16d688!8m2!3d18.813651!4d73.7007991'
         }
@@ -521,8 +524,8 @@
                 cssClass: "plt durgapur existing",
                 type: "circle",
                 size: 30,
-                latitude: 11,
-                longitude: 76.9,
+                latitude: 23,
+                longitude: 88.3,
                 text: {
                     content: "Durgapur",
                     position: "bottom",
@@ -616,6 +619,15 @@
             });
             $('.distcity').addClass('d-none');
             $('.karnataka').removeClass('d-none');
+            $('.districts').addClass('active');
+        } else if (state == "West Bengal") {
+            $map.trigger('zoom', {
+                level: 5,
+                latitude: 23,
+                longitude: 90
+            });
+            $('.distcity').addClass('d-none');
+            $('.westbengal').removeClass('d-none');
             $('.districts').addClass('active');
         } else {
 
